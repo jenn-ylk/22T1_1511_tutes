@@ -1,0 +1,27 @@
+// A program that uses a struct to store information about the time
+// Tutorial week 3, COMP1511
+
+#include <stdio.h>
+
+struct time {
+    int minute;
+    int hour;
+    char meridiem;
+    // ^ type (for field)
+};
+
+int main (void) {
+    
+    struct time curr_time; 
+    curr_time.minute = 25;
+    // ^name.field = value;
+    curr_time.hour = 9;
+    curr_time.meridiem = 'a';
+    
+    printf(
+        "The time is %02d:%02d %cm\n", 
+        curr_time.hour, curr_time.minute, curr_time.meridiem
+    );
+    
+    return 0;
+}

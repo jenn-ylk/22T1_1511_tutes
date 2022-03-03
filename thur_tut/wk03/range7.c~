@@ -1,0 +1,9 @@
+// Combining conditions (divisibility) and 
+// Tutorial week 3, COMP1511
+
+#include <stdio.h>
+
+int main (void) {
+
+    return 0;
+}
